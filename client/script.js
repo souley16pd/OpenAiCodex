@@ -79,7 +79,7 @@ const handleSubmit = async (e) => { // this takes an event as first and only par
 
   loader(messageDiv); // Turning on the loader
 
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://codex-8jxj.onrender.com', {  //! While testing, this value was set to http://localhost:5000. - The codex.. address can be accessed from anywhere on the internet
     method: 'POST',
     headers: { // object
       'Content-Type': 'application/json'
